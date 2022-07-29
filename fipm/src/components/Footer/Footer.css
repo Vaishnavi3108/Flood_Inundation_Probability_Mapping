@@ -1,0 +1,22 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 0px;
+    background-color: #f3f3f3;
+}
+
+.footer>div{
+    width: 25%;
+}
+
+.contact_us > ul, .policies > ul, .imp_links > ul{
+    padding: 0%;
+}
+
+ul > p{
+    margin: 10px 0px;
+    font-size: 14px;
+}

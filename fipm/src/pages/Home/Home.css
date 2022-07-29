@@ -1,0 +1,27 @@
+.home-container{
+    height: max-content;
+    margin: 20px 60px;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.image-slider{
+    height: 200px;
+}
+
+.announcement-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.announcement-items > * {
+    margin: 10px 100px 10px 0;
+
+}
+
+.info-section-title {
+    text-align: center;
+}

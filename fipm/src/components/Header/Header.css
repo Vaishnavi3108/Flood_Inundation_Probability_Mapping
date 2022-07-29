@@ -1,0 +1,20 @@
+
+.header-container{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-logo{
+    height: 80px;
+    width: 80px;
+    background-image: url(../../assets/header-logo.png);
+    background-size: cover;
+}
+
+.header-title{
+    font-size: 3.5vw;
+    font-family: var(--primary-font);
+}
