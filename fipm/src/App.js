@@ -15,9 +15,9 @@ function App() {
 <>
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home/>} />
-        <Route exact path="/home" element={<Home/>} />
-        <Route exact path="/probabilitymap" element={<Map/>} />
+        <Route exact path="/" element={<Home/>} ></Route>
+        <Route exact path="/home" element={<Home/>} ></Route>
+        <Route exact path="/probabilitymap" element={<Map/>} ></Route>
       </Routes>
     </BrowserRouter>
 </>
