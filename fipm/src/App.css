@@ -1,5 +1,11 @@
 
-:root{
+:root {
+  --title: #0D4F8C;
+  --subtitle: #3E80BC;
+  --text-blue: #4993D7;
+  --ligh-blue: #ADD7FF;
+  --light-blue-bg: #D5EBFF;
+  --ultra-light: rgb(213, 235, 255, 0.2);
   --primary-font: 'Poppins', sans-serif;
   --black-text : rgb(30, 30, 30)
 }

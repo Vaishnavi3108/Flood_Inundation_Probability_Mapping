@@ -1,0 +1,115 @@
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 5px 40px 20px 40px;
+    height: 30%;
+    margin-top: 30px;
+}
+
+.search-container>* {
+    width: 100%;
+}
+
+.container-title {
+    color: var(--title);
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 38px;
+    margin: 0%;
+}
+
+.all-search-parameters {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.search-parameters {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 85%;
+}
+
+.search-parameters > div {
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.stateAndDistrict {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.search-input {
+    font-size: 18px;
+    width: 22em;
+    padding: 5px 0px;
+    border: none;
+    color: var(--title);
+    outline: none;
+    background-color: var(--light-blue-bg);
+    border-radius: 3px;
+}
+
+
+.search-btn {
+    background-color: var(--title);
+    color: var(--light-blue-bg);
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 38px;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.stateAndDistrict > div {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+.advSearch-stateAndDistrict{
+    margin-bottom: 0% !important;
+}
+
+.search-input-conatainer {
+    background-color: var(--light-blue-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.state-dropdown {
+    background: var(--light-blue-bg);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    border: 2px solid var(--subtitle);
+    border-radius: 4px;
+
+    /* position: absolute; */
+    width: 100%;
+    margin-top: 20px;
+
+}
