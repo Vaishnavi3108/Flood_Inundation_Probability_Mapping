@@ -10,7 +10,6 @@
 .header-logo{
     height: 80px;
     width: 80px;
-    background-image: url(../../assets/header-logo.png);
     background-size: cover;
 }
 

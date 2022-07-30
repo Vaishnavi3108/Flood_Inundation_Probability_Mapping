@@ -13,7 +13,7 @@ export default function InfoSection(props) {
           <div className="info-section-images ">
             {
               props.data.images.map(ele=>{
-                  <img src={ele} alt="" />
+                  console.log(ele)
                 })
             }
           </div>

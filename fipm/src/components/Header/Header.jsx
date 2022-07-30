@@ -6,7 +6,7 @@ export default function Header() {
     <>
     
     <header className='header-container '>
-        <div className="header-logo "></div>
+        <div className="header-logo " style={{ backgroundImage: "url(/assets/header-logo.png)" , backgroundSize:"cover" }}  ></div>
         <span className="header-title">Flood Inundation Probability Mapping</span>
     </header>
     

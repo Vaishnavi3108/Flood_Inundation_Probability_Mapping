@@ -7,6 +7,25 @@
 
 .image-slider{
     height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-image{
+    width: 320px;
+    height: 180px;
+    margin: 20px 50px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: max-content;
+    transition: all 1s cubic-bezier(0.45, -0.08, 0.18, 1.16);
 }
 
 .announcement-items{
@@ -24,4 +43,20 @@
 
 .info-section-title {
     text-align: center;
+}
+
+.slider-still{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.icon{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
 }
