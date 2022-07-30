@@ -38,7 +38,7 @@ export default function Home() {
       <Header />
       <Navbar />
 
-      <section className="home-container ">
+      <section className="home container ">
 
         <div className="image-slider border">
           {

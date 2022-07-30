@@ -12,6 +12,8 @@
 
 body{
   font-family: var(--primary-font);
+  color: var(--black-text);
+  font-size: 14px;
 }
 
 .border{
