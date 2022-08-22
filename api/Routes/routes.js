@@ -4,7 +4,7 @@ const Result = require('../Models/Schema')
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, './uploads/')
+        cb(null, '../fipm/src/uploads/')
     },
     filename: function (req, file, cb) {
         cb(null, file.originalname)
@@ -42,14 +42,15 @@ router.post('/result', upload.single('Result'), async (req, res) => {
 
 router.get('/result', upload.single('Result'), async (req, res) => {
 
-    const State = req.body.State
-    const District = req.body.District
+    const State = req.query.State
+    const District = req.query.District
+
+    console.log(State + " " + District)
 
     try {
 
         const result = await Result.find({District : District})
-        const { ImagePath , ...info } = result[0]
-        res.status(200).json(ImagePath)
+        res.status(200).json(result)
 
     } catch (err) {
         console.log(err)
