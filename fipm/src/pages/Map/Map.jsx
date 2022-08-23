@@ -9,8 +9,6 @@ import axios from 'axios'
 import '../Map/Map.css'
 import { Download } from 'react-feather';
 
-import image from '../../uploads/1.jpeg'
-
 export default function Map() {
 
     const imageContainer = useRef()
@@ -35,9 +33,11 @@ export default function Map() {
                 console.log(response.data[0])
 
                 let path = response.data[0].ImagePath
-                path = path.replace('\\', '/')
+                path = path.replace(/\\/g, '/')
+                path = path.split("src/")[1]
+                console.log(path)
 
-                const pic = require(path)
+                const pic = require(`../../${path}`)
                 console.log(pic)
 
                 const root = ReactDOMClient.createRoot(imageContainer.current)
