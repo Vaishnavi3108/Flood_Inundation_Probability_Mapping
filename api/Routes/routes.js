@@ -48,7 +48,6 @@ router.get('/result', upload.single('Result'), async (req, res) => {
     console.log(State + " " + District)
 
     try {
-
         const result = await Result.find({District : District})
         res.status(200).json(result)
 
