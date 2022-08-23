@@ -33,7 +33,9 @@ export default function Map() {
                 console.log(response.data[0])
 
                 let path = response.data[0].ImagePath
-                path = path.replace('\\', '/')
+                path = path.replace(/\\/g, '/')
+                path = path.split("src/")[1]
+                console.log(path)
 
                 const pic = require(`../../${path}`)
                 console.log(pic)
@@ -42,8 +44,6 @@ export default function Map() {
 
                 const image = document.createElement('img')
                 image.src = pic
-
-
 
                 root.render(<>
                     <img id='result-img' src={pic} />
@@ -58,7 +58,6 @@ export default function Map() {
                         </p>
                     </div>
                 </>)
-
 
             })
             .catch(function (error) {
