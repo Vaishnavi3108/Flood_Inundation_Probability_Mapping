@@ -9,6 +9,8 @@ import axios from 'axios'
 import '../Map/Map.css'
 import { Download } from 'react-feather';
 
+import image from '../../uploads/1.jpeg'
+
 export default function Map() {
 
     const imageContainer = useRef()
@@ -33,9 +35,11 @@ export default function Map() {
                 console.log(response.data[0])
 
                 let path = response.data[0].ImagePath
-                path = path.replace('\\', '/')
+                path = path.replace(/\\/g, '/')
+                path = path.split('.')[2] + "." + path.split('.')[3]
+                console.log(path)
 
-                const pic = require(`../../${path}`)
+                const pic = require(path)
                 console.log(pic)
 
                 const root = ReactDOMClient.createRoot(imageContainer.current)
@@ -46,7 +50,7 @@ export default function Map() {
 
 
                 root.render(<>
-                    <img id='result-img' src={pic} />
+                    <img id='result-img' src={image} />
                     <div className='info-section' >
                         <a href={pic} download="Image.png" >
                             <button id='download-btn' >
