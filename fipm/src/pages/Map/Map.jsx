@@ -34,6 +34,7 @@ export default function Map() {
 
                 let path = response.data[0].ImagePath
                 path = path.replace(/\\/g, '/')
+                console.log(path)
                 path = path.split("src/")[1]
                 console.log(path)
 
